@@ -5,7 +5,9 @@
 # I have not run the code as i dont have arcade installed and its not getting installed, so please make sure this runs properly asap.
 # the assest pack is uploaded separately
 import arcade
-
+import sys 
+import setuptools
+import tokensize
 # SCREEN RESOLTION
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 650
