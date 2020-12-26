@@ -1,4 +1,4 @@
-# santa-runner-game
+# Santa Runner Game
 
 This holiday season Santa is coming to your home...  
 But wait, someone stole all the toys!  
