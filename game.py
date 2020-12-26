@@ -1,14 +1,11 @@
-#SANTA RUNNER PLATFORM GAME INSPIED BY OFFICIAL ARCADE DOCUMENTATION
-# I have took the things from the official documentation so modify it according to our needs, dont worry abot the assests pack for now 
-# I will personalize them just modify this code, 
-# pip install arcade for this, and try finding how to link it with cockroach db to store our scores, rest is almost done ,  also try thinking about a good domain name
-# I have not run the code as i dont have arcade installed and its not getting installed, so please make sure this runs properly asap.
-# the assest pack is uploaded separately
+# SANTA RUNNER PLATFORM GAME INSPIRED BY OFFICIAL ARCADE DOCUMENTATION
+
 import arcade
 import sys 
 import setuptools
-import tokensize
-# SCREEN RESOLTION
+import tokenize
+
+# SCREEN RESOLUTION
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 650
 SCREEN_TITLE = "Help Santa!!"
