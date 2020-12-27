@@ -1,4 +1,8 @@
 import pygame
+from pygame import mixer
+import sys
+import math
+import random
 
 # Initializes Pygame
 pygame.init ()
@@ -10,9 +14,9 @@ screen = pygame.display.set_mode ((1000,650))
 pygame.display.set_caption("Santa Saves Christmas")
 
 # Player
-playerImg = pygame.image.load('standingSanta.png')
+playerImg = pygame.image.load('./images/player_2/player_stand1.png')
 playerX = 25
-playerY = 440
+playerY = 430
 playerX_change = 0
 playerY_change = 0
 
@@ -33,18 +37,18 @@ while running :
 
         if event.type == pygame.KEYDOWN :
             if event.key == pygame.K_LEFT :
-                playerX_change = -0.3
+                playerX_change = -1
             if event.key == pygame.K_RIGHT :
-                playerX_change = 0.3
+                playerX_change = 1
             if event.key == pygame.K_UP :
                 for event in pygame.event.get () :
                     i = 0
                     while i < 2 :
-                        playerY_change = 0.3
+                        playerY_change = 1
                         i += 1
                         playerY += playerY_change
                     while i > 0 :
-                        playerY_change = -0.3
+                        playerY_change = -1
                         i -= 1
                         playerY += playerY_change
 
