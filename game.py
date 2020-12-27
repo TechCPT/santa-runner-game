@@ -161,7 +161,11 @@ class Level(object):
         """ Draw everything on this level. """
  
         # Draw the background
-        screen.fill((146, 244, 255))
+        bg = pygame.image.load('./images/tiles/1.png')
+        bg = pygame.transform.scale(bg, (1080,720))
+        
+        
+        screen.blit(bg,(0, 0))
  
         # Draw all the sprite lists that we have
         self.platform_list.draw(screen)
@@ -233,7 +237,7 @@ def main():
     size = [SCREEN_WIDTH, SCREEN_HEIGHT]
     screen = pygame.display.set_mode(size)
  
-    pygame.display.set_caption("Platformer Jumper")
+    pygame.display.set_caption("HELP SANTA!!")
  
     # Create the player
     player = Player()
