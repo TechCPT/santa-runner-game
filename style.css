@@ -1,0 +1,61 @@
+body{
+    background-image: url(img1.jpg);
+    height: 615px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .p{
+      color: red;
+  }
+  .p:hover{
+     
+  }
+  @keyframes mc 
+  {
+      0%{
+          color:#ff1500;
+      }
+      30%{
+          color:#6fff00;
+      }
+      60%{
+          color:#f2ff00;
+      }
+      100%{
+          color:#ff00f7;
+      }
+  }
+ 
+  .h{
+      opacity:0;
+      background-image: url(sf.gif);
+      height: 615px;
+      width: 100%;
+	  text-align: center;
+	  
+  }
+  .h:hover{
+    opacity:0.5;
+    height: 615px;
+    width: 100%;
+    background-image: url(sf.gif);
+	 text-align: center;
+	  animation-name:mc;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+  }
+  .container{
+	  background-color: white;
+	  height: 300px;
+	  width: 500px;
+	  color: green;
+position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+	  
+  }
